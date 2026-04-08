@@ -316,6 +316,97 @@ export const PROJECTS: Project[] = [
     description: "Video 3D sản phẩm",
     descriptionEn: "3D Product Video"
   },
+  // 3D Explainer
+  {
+    id: "3d-explainer-bm",
+    title: "BM Windows Panel Explaner",
+    titleEn: "BM Windows Panel Explaner",
+    category: "3D Explainer",
+    client: "BM Windows",
+    thumbnail: "https://images.unsplash.com/photo-1578305011741-f76110cb18f0?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/3D%20EXPLAINER/1.%20BM%20Windows%20Panel%20Explaner%20(%20Sydney%20)_1.mp4",
+    description: "- Dự án tập trung vào việc hiện thực hóa các cấu kiện kỹ thuật phức tạp thành hình ảnh trực quan sinh động, Zen Visual Media đã trình diễn trọn vẹn kết cấu bên trong của hệ thống panel kính, giúp minh họa rõ nét quy trình lắp ghép và các ưu điểm cơ khí vượt trội.\n- Đây là công cụ đắc lực hỗ trợ đối tác chiến lược BM Windows trong việc giới thiệu giải pháp kiến trúc cao cấp đến khách hàng, đảm bảo tính chuẩn xác tuyệt đối về mặt kỹ thuật mà vẫn mang đậm tính thẩm mỹ hiện đại.",
+    descriptionEn: "- The project focuses on realizing complex technical components into vivid visual images. Zen Visual Media has fully demonstrated the internal structure of the glass panel system, helping to clearly illustrate the assembly process and superior mechanical advantages.\n- This is a powerful tool to support strategic partner BM Windows in introducing high-end architectural solutions to customers, ensuring absolute technical accuracy while maintaining a bold, modern aesthetic.",
+    descriptionNo: "- Prosjektet fokuserer på å virkeliggjøre komplekse tekniske komponenter til levende visuelle bilder. Zen Visual Media har fullt ut demonstrert den interne strukturen i glasspanelsystemet, noe som bidrar til å illustrere monteringsprosessen og overlegne mekaniske fordeler tydelig.\n- Dette er et kraftig verktøy for å støtte den strategiske partneren BM Windows med å introdusere avanserte arkitektoniske løsninger til kunder, og sikrer absolutt teknisk nøyaktighet samtidig som man opprettholder en dristig, moderne estetikk."
+  },
+  {
+    id: "3d-explainer-skylight",
+    title: "Skylight Panel LongThanh Airport",
+    titleEn: "Skylight Panel LongThanh Airport",
+    category: "3D Explainer",
+    client: "Long Thanh Airport",
+    thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/3D%20EXPLAINER/2.%20Skylight%20Panel%20LongThanh%20Airport_1.mp4",
+    description: "Mô phỏng cấu tạo, giải thích hoạt động máy móc, công trình.",
+    descriptionEn: "Simulating structure, explaining operation of machinery and projects."
+  },
+  {
+    id: "3d-explainer-slidedoor",
+    title: "Slide Door Thermally",
+    titleEn: "Slide Door Thermally",
+    category: "3D Explainer",
+    client: "Creative Lab",
+    thumbnail: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/3D%20EXPLAINER/3.%20Slide%20Door%20Thermally_1.mp4",
+    description: "Mô phỏng cấu tạo, giải thích hoạt động máy móc, công trình.",
+    descriptionEn: "Simulating structure, explaining operation of machinery and projects."
+  },
+  {
+    id: "3d-explainer-tiktokmaze",
+    title: "TiktokMaze Planner",
+    titleEn: "TiktokMaze Planner",
+    category: "3D Explainer",
+    client: "Tiktok Shop",
+    thumbnail: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/3D%20EXPLAINER/4.%20TiktokMaze%20Planner.mp4",
+    description: "Mô phỏng cấu tạo, giải thích hoạt động máy móc, công trình.",
+    descriptionEn: "Simulating structure, explaining operation of machinery and projects."
+  },
+  // AI Production
+  {
+    id: "ai-production-mercedes",
+    title: "TVC AI Mercedes AMG G63",
+    titleEn: "TVC AI Mercedes AMG G63",
+    category: "AI Production",
+    client: "Mercedes",
+    thumbnail: "https://images.unsplash.com/photo-1614728853913-1e221165d770?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/AI%20PRODUCTION/1.%20TVC%20AI%20Mercedes%20AMG%20G63_1.mp4",
+    description: "Sản phẩm video được tạo ra hoàn toàn bằng AI.",
+    descriptionEn: "Video production created entirely by AI."
+  },
+  {
+    id: "ai-production-honda",
+    title: "TVC AI Honda CRV",
+    titleEn: "TVC AI Honda CRV",
+    category: "AI Production",
+    client: "Honda",
+    thumbnail: "https://images.unsplash.com/photo-1585338107529-13afc5f02586?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/AI%20PRODUCTION/2.%20TVC%20AI%20Honda%20CRV_1.mp4",
+    description: "Sản phẩm video được tạo ra hoàn toàn bằng AI.",
+    descriptionEn: "Video production created entirely by AI."
+  },
+  {
+    id: "ai-production-teddy",
+    title: "Teddy Tint Story",
+    titleEn: "Teddy Tint Story",
+    category: "AI Production",
+    client: "Maybelline",
+    thumbnail: "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/AI%20PRODUCTION/3.%20Teddy%20Tint%20Story_1.mp4",
+    description: "Sản phẩm video được tạo ra hoàn toàn bằng AI.",
+    descriptionEn: "Video production created entirely by AI."
+  },
+  {
+    id: "ai-production-eucerin",
+    title: "TVC AI Eucerin",
+    titleEn: "TVC AI Eucerin",
+    category: "AI Production",
+    client: "Eucerin",
+    thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/AI%20PRODUCTION/4.%20TVC%20AI%20Eucerin-.mp4",
+    description: "Sản phẩm video được tạo ra hoàn toàn bằng AI.",
+    descriptionEn: "Video production created entirely by AI."
+  },
 ];
 
 

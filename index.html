@@ -52,7 +52,22 @@
         background-color: #F5F5F7;
         color: #121212;
         transition: background-color 0.5s ease, color 0.5s ease;
-        cursor: crosshair;
+        cursor: url('https://cdn-icons-png.flaticon.com/32/616/616430.png'), auto;
+      }
+      a, button {
+        cursor: url('https://cdn-icons-png.flaticon.com/32/616/616408.png'), pointer;
+      }
+      .cursor-tail {
+        width: 12px;
+        height: 12px;
+        background: #F05A28;
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 9999;
+        transition: transform 0.1s linear, opacity 0.5s ease;
+        mix-blend-mode: screen;
+        opacity: 0.6;
       }
       .dark body {
         background-color: #050505;

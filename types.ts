@@ -15,7 +15,7 @@ export interface Service {
   icon: LucideIcon;
 }
 
-export type ProjectCategory = 'All' | '3D TVC' | '3D FOOH' | '3D Product' | 'AI Technical';
+export type ProjectCategory = 'All' | '3D TVC' | '3D FOOH' | '3D Product' | '3D Explainer' | 'AI Production';
 
 export interface Project {
   id: string;

@@ -4,7 +4,7 @@ import { ProjectCategory, Project } from '../types';
 import { X, ArrowUpRight } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
-const CATEGORIES: ProjectCategory[] = ['All', '3D TVC', '3D FOOH', '3D Product', 'AI Technical'];
+const CATEGORIES: ProjectCategory[] = ['All', '3D TVC', '3D FOOH', '3D Product', '3D Explainer', 'AI Production'];
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState<ProjectCategory>('All');
@@ -21,9 +21,9 @@ const Projects: React.FC = () => {
       {/* 3D Landscape Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
          <img 
-            src="https://images.unsplash.com/photo-1614728853913-1e221165d770?q=80&w=2000&auto=format&fit=crop" 
-            alt="3D Landscape" 
-            className="w-full h-full object-cover opacity-15"
+            src="./pictures/Zen-family.jpg" 
+            alt="Zen Family Background" 
+            className="w-full h-full object-cover opacity-20 filter grayscale contrast-125"
          />
          <div className="absolute inset-0 bg-gradient-to-b from-dark via-dark/95 to-dark"></div>
       </div>
@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
               className="group flex flex-col gap-6 cursor-pointer"
             >
               <div className={`relative overflow-hidden bg-gray-900 border border-white/5 transition-all duration-500 group-hover:border-gold/30 ${
-                (project.category === '3D TVC' || project.category === '3D FOOH' || project.category === '3D Product') ? 'aspect-square' : 'aspect-video'
+                (project.category === '3D TVC' || project.category === '3D FOOH' || project.category === '3D Product' || project.category === '3D Explainer' || project.category === 'AI Production') ? 'aspect-square' : 'aspect-video'
               }`}>
                 {project.videoUrl ? (
                   <video
@@ -112,7 +112,7 @@ const Projects: React.FC = () => {
       {selectedProject && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 bg-black/98 backdrop-blur-xl">
            <div className={`bg-dark w-full max-w-[95vw] lg:max-w-7xl border border-white/10 flex flex-col relative shadow-2xl shadow-gold/10 overflow-hidden ${
-             (selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product') ? 'md:flex-row md:h-[85vh]' : 'md:h-auto'
+             (selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product' || selectedProject.category === '3D Explainer' || selectedProject.category === 'AI Production') ? 'md:flex-row md:h-[85vh]' : 'md:h-auto'
            }`}>
               <button 
                   onClick={() => setSelectedProject(null)}
@@ -122,7 +122,7 @@ const Projects: React.FC = () => {
               </button>
 
               <div className={`bg-black flex items-center justify-center relative group overflow-hidden ${
-                (selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product') ? 'w-full md:w-[70%] h-1/2 md:h-auto' : 'w-full aspect-video'
+                (selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product' || selectedProject.category === '3D Explainer' || selectedProject.category === 'AI Production') ? 'w-full md:w-[70%] h-1/2 md:h-auto' : 'w-full aspect-video'
               }`}>
                  {selectedProject.videoUrl ? (
                     <video 
@@ -138,7 +138,7 @@ const Projects: React.FC = () => {
               </div>
 
               <div className={`p-8 md:p-12 flex flex-col bg-charcoal/50 backdrop-blur-sm ${
-                (selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product') ? 'w-full md:w-[30%] border-l border-white/10 overflow-y-auto' : 'w-full'
+                (selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product' || selectedProject.category === '3D Explainer' || selectedProject.category === 'AI Production') ? 'w-full md:w-[30%] border-l border-white/10 overflow-y-auto' : 'w-full'
               }`}>
                  <div className="flex flex-col gap-8">
                     <div>
@@ -151,7 +151,7 @@ const Projects: React.FC = () => {
                         </h3>
                     </div>
                     
-                    <div className={`grid gap-8 ${(selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product') ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-4'}`}>
+                    <div className={`grid gap-8 ${(selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product' || selectedProject.category === '3D Explainer' || selectedProject.category === 'AI Production') ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-4'}`}>
                         <div>
                             <span className="block text-gray-600 text-[10px] uppercase tracking-widest mb-2">{t.projects.direction}</span>
                             <span className="text-white text-base font-bold">{selectedProject.category}</span>
@@ -164,7 +164,7 @@ const Projects: React.FC = () => {
                             <span className="block text-gray-600 text-[10px] uppercase tracking-widest mb-2">{t.projects.client}</span>
                             <span className="text-white text-base">{selectedProject.client || "Creative Lab"}</span>
                         </div>
-                        <div className={(selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product') ? '' : 'md:col-span-1'}>
+                        <div className={(selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product' || selectedProject.category === '3D Explainer' || selectedProject.category === 'AI Production') ? '' : 'md:col-span-1'}>
                              <span className="block text-gray-600 text-[10px] uppercase tracking-widest mb-2">{t.projects.badge}</span>
                              <p className="text-gray-400 text-xs leading-relaxed font-light whitespace-pre-line">
                                 {language === 'en' ? selectedProject.descriptionEn || selectedProject.description : language === 'no' ? selectedProject.descriptionNo || selectedProject.descriptionEn || selectedProject.description : selectedProject.description}

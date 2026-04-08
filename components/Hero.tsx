@@ -10,9 +10,9 @@ const Hero: React.FC = () => {
       {/* 3D Abstract Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <img 
-          src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop" 
-          alt="Abstract 3D Background" 
-          className="w-full h-full object-cover opacity-30 mix-blend-screen"
+          src="./pictures/Zen-family.jpg" 
+          alt="Zen Family Background" 
+          className="w-full h-full object-cover opacity-50 transition-opacity duration-1000"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/50 to-dark"></div>
       </div>
