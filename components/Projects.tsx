@@ -97,7 +97,7 @@ const Projects: React.FC = () => {
                     <div className="h-[1px] w-8 bg-gold/30"></div>
                  </div>
                  <h3 className="text-lg md:text-xl font-display font-bold text-white tracking-tight uppercase group-hover:text-gold transition-colors duration-300">
-                    {language === 'en' ? project.titleEn || project.title : language === 'no' ? project.titleNo || project.titleEn || project.title : project.title}
+                    {language === 'en' ? project.titleEn || project.title : language === 'jp' ? project.titleJp || project.titleEn || project.title : language === 'kr' ? project.titleKr || project.titleEn || project.title : project.title}
                  </h3>
                  <span className="text-gray-500 text-[10px] font-bold tracking-widest uppercase opacity-60">
                     {project.client || "Creative Lab"}
@@ -147,7 +147,7 @@ const Projects: React.FC = () => {
                             <span className="text-white/20 text-[10px] font-bold uppercase tracking-widest">Zen Visual Media</span>
                         </div>
                         <h3 className="text-3xl md:text-4xl font-display font-black text-white tracking-tight uppercase mb-6 leading-tight">
-                            {language === 'en' ? selectedProject.titleEn || selectedProject.title : language === 'no' ? selectedProject.titleNo || selectedProject.titleEn || selectedProject.title : selectedProject.title}
+                            {language === 'en' ? selectedProject.titleEn || selectedProject.title : language === 'jp' ? selectedProject.titleJp || selectedProject.titleEn || selectedProject.title : language === 'kr' ? selectedProject.titleKr || selectedProject.titleEn || selectedProject.title : selectedProject.title}
                         </h3>
                     </div>
                     
@@ -167,7 +167,7 @@ const Projects: React.FC = () => {
                         <div className={(selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product' || selectedProject.category === '3D Explainer' || selectedProject.category === 'AI Production') ? '' : 'md:col-span-1'}>
                              <span className="block text-gray-600 text-[10px] uppercase tracking-widest mb-2">{t.projects.badge}</span>
                              <p className="text-gray-400 text-xs leading-relaxed font-light whitespace-pre-line">
-                                {language === 'en' ? selectedProject.descriptionEn || selectedProject.description : language === 'no' ? selectedProject.descriptionNo || selectedProject.descriptionEn || selectedProject.description : selectedProject.description}
+                                {language === 'en' ? selectedProject.descriptionEn || selectedProject.description : language === 'jp' ? selectedProject.descriptionJp || selectedProject.descriptionEn || selectedProject.description : language === 'kr' ? selectedProject.descriptionKr || selectedProject.descriptionEn || selectedProject.description : selectedProject.description}
                              </p>
                         </div>
                     </div>

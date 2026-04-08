@@ -9,14 +9,15 @@ const Navbar: React.FC = () => {
   const { language, setLanguage, t } = useLanguage();
   const { theme, setTheme } = useTheme();
 
-  const LangButton = ({ code, label }: { code: Language, label: string }) => (
-    <button 
-      onClick={() => setLanguage(code)}
-      className={`text-[10px] font-bold px-2 py-1 transition-colors ${language === code ? 'text-gold' : 'text-gray-500 hover:text-charcoal dark:hover:text-white'}`}
-    >
-      {label}
-    </button>
-  );
+  const [isLangOpen, setIsLangOpen] = useState(false);
+  const languages: { code: Language, label: string }[] = [
+    { code: 'en', label: 'ENGLISH' },
+    { code: 'vi', label: 'TIẾNG VIỆT' },
+    { code: 'jp', label: '日本語' },
+    { code: 'kr', label: '한국어' }
+  ];
+
+  const currentLangLabel = languages.find(l => l.code === language)?.label || 'LANGUAGE';
 
   const ThemeButton = ({ type, icon: Icon }: { type: Theme, icon: any }) => (
     <button 
@@ -30,6 +31,10 @@ const Navbar: React.FC = () => {
 
   return (
     <>
+      <div 
+        className="fixed top-0 left-0 right-0 h-32 bg-gradient-to-b from-dark/40 via-dark/20 to-transparent backdrop-blur-md z-[45] pointer-events-none transition-opacity duration-500"
+        style={{ maskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 60%, transparent 100%)' }}
+      ></div>
       <nav 
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-between items-center px-6 md:px-12 py-6 mix-blend-difference text-white`}
       >
@@ -52,13 +57,29 @@ const Navbar: React.FC = () => {
           </div>
           
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1 bg-white/5 backdrop-blur-md px-2 py-1 rounded-full border border-white/10">
-              <Globe size={12} className="text-gold mr-1" />
-              <LangButton code="en" label="EN" />
-              <span className="text-white/10 text-[8px]">|</span>
-              <LangButton code="vi" label="VI" />
-              <span className="text-white/10 text-[8px]">|</span>
-              <LangButton code="no" label="NO" />
+            <div className="relative group/lang">
+              <button 
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className="flex items-center gap-2 bg-white/5 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/10 hover:border-gold/50 transition-all"
+              >
+                <Globe size={12} className="text-gold" />
+                <span className="text-[10px] font-black tracking-widest">{language.toUpperCase()}</span>
+              </button>
+              
+              <div className={`absolute top-full right-0 mt-2 w-40 bg-black/90 backdrop-blur-xl border border-white/10 rounded-xl overflow-hidden shadow-2xl transition-all duration-300 origin-top ${isLangOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
+                 {languages.map(lang => (
+                   <button
+                    key={lang.code}
+                    onClick={() => {
+                      setLanguage(lang.code);
+                      setIsLangOpen(false);
+                    }}
+                    className={`w-full text-left px-4 py-3 text-[10px] font-bold tracking-widest hover:bg-gold hover:text-black transition-all border-b border-white/5 last:border-0 ${language === lang.code ? 'text-gold' : 'text-gray-400'}`}
+                   >
+                     {lang.label}
+                   </button>
+                 ))}
+              </div>
             </div>
 
             <div className="flex items-center gap-1 bg-white/5 backdrop-blur-md px-2 py-1 rounded-full border border-white/10">
@@ -86,10 +107,16 @@ const Navbar: React.FC = () => {
       >
         <div className="flex flex-col items-center gap-8">
            <div className="flex flex-col items-center gap-6 mb-8">
-              <div className="flex gap-4">
-                <button onClick={() => {setLanguage('en'); setIsOpen(false)}} className={`text-xl font-bold ${language === 'en' ? 'text-gold' : 'text-charcoal/20 dark:text-white/20'}`}>EN</button>
-                <button onClick={() => {setLanguage('vi'); setIsOpen(false)}} className={`text-xl font-bold ${language === 'vi' ? 'text-gold' : 'text-charcoal/20 dark:text-white/20'}`}>VI</button>
-                <button onClick={() => {setLanguage('no'); setIsOpen(false)}} className={`text-xl font-bold ${language === 'no' ? 'text-gold' : 'text-charcoal/20 dark:text-white/20'}`}>NO</button>
+              <div className="flex flex-wrap justify-center gap-4">
+                {languages.map(lang => (
+                  <button 
+                    key={lang.code}
+                    onClick={() => {setLanguage(lang.code); setIsOpen(false)}} 
+                    className={`text-xl font-bold ${language === lang.code ? 'text-gold' : 'text-charcoal/20 dark:text-white/20'}`}
+                  >
+                    {lang.code.toUpperCase()}
+                  </button>
+                ))}
               </div>
               <div className="flex gap-6 mt-4">
                 <button onClick={() => setTheme('light')} className={`p-2 rounded-full ${theme === 'light' ? 'bg-gold/20 text-gold' : 'text-charcoal dark:text-white'}`}><Sun size={24}/></button>

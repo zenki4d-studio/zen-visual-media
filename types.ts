@@ -21,14 +21,16 @@ export interface Project {
   id: string;
   title: string;
   titleEn?: string;
-  titleNo?: string;
+  titleJp?: string;
+  titleKr?: string;
   category: ProjectCategory;
   client?: string;
   thumbnail: string;
   videoUrl?: string;
   description: string;
   descriptionEn?: string;
-  descriptionNo?: string;
+  descriptionJp?: string;
+  descriptionKr?: string;
 }
 
 export interface SkillData {
