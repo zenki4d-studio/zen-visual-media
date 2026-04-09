@@ -1,19 +1,49 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { PROJECTS } from '../constants';
 import { ProjectCategory, Project } from '../types';
-import { X, ArrowUpRight } from 'lucide-react';
+import { X, ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 const CATEGORIES: ProjectCategory[] = ['All', '3D TVC', '3D FOOH', '3D Product', '3D Explainer', 'AI Production'];
+const PROJECTS_PER_PAGE = 6;
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState<ProjectCategory>('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
   const { t, language } = useLanguage();
+  const videoRefs = useRef<{ [key: string]: HTMLVideoElement | null }>({});
 
   const filteredProjects = filter === 'All' 
     ? PROJECTS 
     : PROJECTS.filter(p => p.category === filter);
+
+  const totalPages = Math.ceil(filteredProjects.length / PROJECTS_PER_PAGE);
+  const pagedProjects = filteredProjects.slice(
+    (currentPage - 1) * PROJECTS_PER_PAGE,
+    currentPage * PROJECTS_PER_PAGE
+  );
+
+  // Reset page when filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filter]);
+
+  // Handle video playback control
+  useEffect(() => {
+    Object.values(videoRefs.current).forEach(video => {
+      if (video) {
+        if (selectedProject) {
+          video.pause();
+        } else {
+          // Only play if it was intended to (autoPlay is true on these videos)
+          video.play().catch(() => {
+            // Browser might block autoplay if not muted or user hasn't interacted
+          });
+        }
+      }
+    });
+  }, [selectedProject]);
 
   return (
     <section id="projects" className="py-32 bg-dark relative overflow-hidden">
@@ -54,8 +84,8 @@ const Projects: React.FC = () => {
              </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
-          {filteredProjects.map((project) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20 min-h-[600px]">
+          {pagedProjects.map((project) => (
             <div 
               key={project.id}
               onClick={() => setSelectedProject(project)}
@@ -66,6 +96,7 @@ const Projects: React.FC = () => {
               }`}>
                 {project.videoUrl ? (
                   <video
+                    ref={el => videoRefs.current[project.id] = el}
                     src={project.videoUrl}
                     autoPlay
                     loop
@@ -106,6 +137,47 @@ const Projects: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="flex items-center justify-center gap-4 mt-20">
+            <button
+              onClick={() => setCurrentPage(prev => Math.max(1, prev - 1))}
+              disabled={currentPage === 1}
+              className={`p-2 border border-white/10 rounded-full transition-all duration-300 ${
+                currentPage === 1 ? 'opacity-20 cursor-not-allowed' : 'hover:border-gold hover:text-gold text-white/50'
+              }`}
+            >
+              <ChevronLeft size={20} />
+            </button>
+            
+            <div className="flex gap-2">
+              {[...Array(totalPages)].map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentPage(i + 1)}
+                  className={`w-8 h-8 text-[10px] font-bold rounded-full border transition-all duration-300 ${
+                    currentPage === i + 1 
+                    ? 'border-gold text-gold bg-gold/10' 
+                    : 'border-white/5 text-gray-500 hover:border-white/20 hover:text-white'
+                  }`}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+
+            <button
+              onClick={() => setCurrentPage(prev => Math.min(totalPages, prev + 1))}
+              disabled={currentPage === totalPages}
+              className={`p-2 border border-white/10 rounded-full transition-all duration-300 ${
+                currentPage === totalPages ? 'opacity-20 cursor-not-allowed' : 'hover:border-gold hover:text-gold text-white/50'
+              }`}
+            >
+              <ChevronRight size={20} />
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Modal */}
