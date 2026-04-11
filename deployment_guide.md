@@ -66,3 +66,13 @@ Nếu bạn đang deploy bằng cách chọn thư mục trên GitHub, hãy đả
 
 ---
 **Bây giờ bạn chỉ cần commit và push các thay đổi tôi đã thực hiện lên GitHub là xong!**
+
+## Cấu hình Tên miền riêng (Custom Domain)
+Tôi đã tạo file `public/CNAME` trỏ về `Zenvisualmedia.com`. Để tên miền hoạt động, bạn cần:
+1.  **Cấu hình DNS**: Trỏ bản ghi `A` hoặc `CNAME` tại nhà cung cấp tên miền của bạn về GitHub Pages:
+    -   `185.199.108.153`
+    -   `185.199.109.153`
+    -   `185.199.110.153`
+    -   `185.199.111.153`
+2.  **Kích hoạt HTTPS**: Sau khi đẩy code lên, hãy vào phần **Settings > Pages** trong repo GitHub của bạn để kiểm tra trạng thái và bật "Enforce HTTPS".
+
