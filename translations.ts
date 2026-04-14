@@ -34,11 +34,11 @@ export const TRANSLATIONS = {
       title: "Services & Capabilities",
       desc: "In a competitive creative market, Zen makes its mark with a harmonious combination of technology, emotion, and mindfulness.",
       items: [
-        { title: "Video 3D TVC", desc: "Optimal format for bringing brand images to the public at outdoor advertising locations and large buildings." },
-        { title: "Video 3D FOOH", desc: "3D Fake Out Of Home advertising videos." },
-        { title: "Video 3D Product", desc: "Showcasing high-end products with stunning 3D animation." },
-        { title: "Video AI Production", desc: "Various types of videos produced using AI." },
-        { title: "AR Filter Production", desc: "Multi-platform AR Filter production." }
+        { title: "VIDEO 3D TVC", desc: "Providing visual branding solutions: from initial concepts to every step of filming and rendering. Ensuring peak creativity, luxury, and contemporary style." },
+        { title: "Video 3D FOOH", desc: "Breaking the boundaries between reality and virtuality. Owning stunning FOOH videos that make brand campaigns go viral across all social media platforms." },
+        { title: "Video 3D Product", desc: "Honoring product value through every frame. With realistic CGI technology, products are deconstructed and showcased from multiple angles, bringing absolute trust in quality." },
+        { title: "Video AI Production", desc: "Pioneering the application of top AI tools to realize ideas with outstanding speed. The optimal solution for campaigns that need to catch trends quickly while ensuring high aesthetic quality." },
+        { title: "AR Filter Production", desc: "Building a direct bridge between brands and users through smooth interactive AR filters on TikTok, Facebook, and Instagram." }
       ]
     },
     projects: {
@@ -90,11 +90,11 @@ export const TRANSLATIONS = {
       title: "Dịch vụ & Năng lực",
       desc: "Trong một thị trường sáng tạo đầy cạnh tranh, Zen ghi dấu bằng sự kết hợp hài hòa giữa công nghệ, cảm xúc và tinh thần tỉnh thức.",
       items: [
-        { title: "Video 3D TVC", desc: "Định dạng tối ưu khi mang hình ảnh thương hiệu xuất hiện trước công chúng tại các địa điểm quảng cáo ngoài trời, các tòa nhà lớn." },
-        { title: "Video 3D FOOH", desc: "Video 3D quảng cáo ngoài trời (Fake Out Of Home)." },
-        { title: "Video 3D Product", desc: "Trình diễn sản phẩm cao cấp với kỹ thuật chuyển động 3D ấn tượng." },
-        { title: "Video AI Production", desc: "Các loại hình video sản xuất bằng AI." },
-        { title: "Sản xuất AR Filter", desc: "Sản xuất AR Filter đa nền tảng." }
+        { title: "VIDEO 3D TVC", desc: "Cung cấp giải pháp quảng bá thương hiệu trực quan: từ ý tưởng sơ khai đến từng bước quay dựng và render. Đảm bảo sự sáng tạo đỉnh cao, sang trọng và hợp thời đại." },
+        { title: "Video 3D FOOH", desc: "Phá vỡ ranh giới giữa thực và ảo. Sở hữu những video FOOH đầy kinh ngạc, giúp chiến dịch của thương hiệu bùng nổ (viral) trên mọi nền tảng mạng xã hội." },
+        { title: "Video 3D Product", desc: "Tôn vinh giá trị sản phẩm qua từng khung hình. Với công nghệ CGI chân thực, sản phẩm sẽ được tách lớp và thể hiện đa góc độ, từ chất liệu bề mặt đến cấu tạo bên trong, mang lại niềm tin tuyệt đối vào chất lượng sản phẩm." },
+        { title: "Video AI Production", desc: "Tiên phong ứng dụng công cụ trí tuệ nhân tạo hàng đầu để hiện thực hóa ý tưởng với tốc độ vượt trội. Giải pháp tối ưu cho các chiến dịch cần bắt kịp xu hướng nhanh chóng mà vẫn đảm bảo tính thẩm mỹ cao." },
+        { title: "AR Filter Production", desc: "Xây dựng cầu nối trực tiếp giữa thương hiệu và người dùng thông qua các bộ lọc AR tương tác mượt mà trên TikTok, Facebook, Instagram." }
       ]
     },
     projects: {
@@ -146,11 +146,11 @@ export const TRANSLATIONS = {
       title: "サービスと能力",
       desc: "競争の激しいクリエイティブ市場において、Zenはテクノロジー、感情、マインドフルネスの調和のとれた組み合わせで足跡を残しています。 ",
       items: [
-        { title: "3D TVCビデオ", desc: "屋外広告や大型ビルでブランドイメージを一般に公開するための最適なフォーマット。 " },
-        { title: "3D FOOHビデオ", desc: "屋外立体広告（Fake Out Of Home）ビデオ。 " },
-        { title: "3Dプロダクトビデオ", desc: "見事な3Dアニメーションでハイエンド製品を披露。 " },
-        { title: "AI制作ビデオ", desc: "AIを使用して制作された様々なタイプのビデオ。 " },
-        { title: "ARフィルター制作", desc: "マルチプラットフォームARフィルター制作。 " }
+        { title: "VIDEO 3D TVC", desc: "初期のコンセプトから撮影、編集、レンダリングまで、視覚的なブランディングを提供。最高の創造性、豪華さ、現代的なスタイルを保証します。" },
+        { title: "Video 3D FOOH", desc: "現実と仮想の境界を打ち破る。ソーシャルメディアでバイラルを引き起こす驚異的なFOOHビデオで、ブランドキャンペーンを成功させます。" },
+        { title: "Video 3D Product", desc: "製品の価値を全てのフレームで表現。リアルなCGI技術により、素材や内部構造を多角的に見せ、製品への絶対的な信頼を構築します。" },
+        { title: "Video AI Production", desc: "最先端AIツールを駆使し、圧倒的なスピードでアイデアを具現化。トレンドを素早く捉えつつ、高い審美性を維持する最適解です。" },
+        { title: "AR Filter Production", desc: "TikTok、Facebook、InstagramでのスムーズなARフィルターを通じて、ブランドとユーザーの間に直接的な架け橋を築きます。" }
       ]
     },
     projects: {
@@ -202,11 +202,11 @@ export const TRANSLATIONS = {
       title: "서비스 및 역량",
       desc: "경쟁이 치열한 크리에이티브 시장에서 Zen은 기술, 감성, 마음챙김의 조화로운 결합으로 그 존재감을 드러냅니다.",
       items: [
-        { title: "3D TVC 영상", desc: "야외 광고매체 및 대형 건물을 통해 브랜드 이미지를 대중에게 전달하는 최적의 포맷." },
-        { title: "3D FOOH 영상", desc: "3D 가상 야외 광고(Fake Out Of Home) 영상." },
-        { title: "3D 제품 영상", desc: "놀라운 3D 애니메이션으로 하이엔드 제품을 선보입니다." },
-        { title: "AI 제작 영상", desc: "AI를 활용하여 제작된 다양한 유형의 영상." },
-        { title: "AR 필터 제작", desc: "멀티 플랫폼 AR 필터 제작." }
+        { title: "VIDEO 3D TVC", desc: "초기 컨셉부터 촬영, 편집, 렌더링까지 시각적 브랜딩 솔루션을 제공합니다. 최고의 창의성, 럭셔리함, 현대적인 스타일을 보장합니다." },
+        { title: "Video 3D FOOH", desc: "현실과 가상의 경계를 허뭅니다. 모든 소셜 미디어 플랫폼에서 브랜드 캠페인을 바이럴 시키는 놀라운 FOOH 영상을 제공합니다." },
+        { title: "Video 3D Product", desc: "제품의 가치를 모든 프레임에 담아냅니다. 사실적인 CGI 기술로 제품을 다각도로 보여줌으로써 품질에 대한 절대적인 신뢰를 제공합니다." },
+        { title: "Video AI Production", desc: "최첨단 AI 도구를 선도적으로 적용하여 뛰어난 속도로 아이디어를 실현합니다. 트렌드를 빠르게 포착해야 하는 캠페인에 최적화된 솔루션입니다." },
+        { title: "AR Filter Production", desc: "TikTok, Facebook, Instagram에서 매끄러운 인터랙티브 AR 필터를 통해 브랜드와 사용자 사이에 직접적인 가교를 구축합니다." }
       ]
     },
     projects: {
