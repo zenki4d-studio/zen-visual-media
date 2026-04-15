@@ -84,7 +84,10 @@ const Projects: React.FC = () => {
              </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20 min-h-[600px]">
+        <div 
+          key={currentPage + filter}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20 min-h-[600px] animate-in fade-in slide-in-from-bottom-4 duration-700"
+        >
           {pagedProjects.map((project) => (
             <div 
               key={project.id}
@@ -96,16 +99,19 @@ const Projects: React.FC = () => {
               }`}>
                 {project.videoUrl ? (
                   <video
+                    key={`video-${project.id}`}
                     ref={el => videoRefs.current[project.id] = el}
-                    src={project.videoUrl}
+                    src={project.previewVideoUrl || project.videoUrl}
                     autoPlay
                     loop
                     muted
                     playsInline
+                    preload="metadata"
                     className="w-full h-full object-cover transition-all duration-700 grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105"
                   />
                 ) : (
                   <img 
+                    key={`img-${project.id}`}
                     src={project.thumbnail} 
                     alt={project.title} 
                     className="w-full h-full object-cover transition-all duration-700 grayscale brightness-50 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-105"
@@ -183,18 +189,18 @@ const Projects: React.FC = () => {
       {/* Modal */}
       {selectedProject && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 bg-black/98 backdrop-blur-xl">
-           <div className={`bg-dark w-full max-w-[95vw] lg:max-w-7xl border border-white/10 flex flex-col relative shadow-2xl shadow-gold/10 overflow-hidden ${
-             (selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product' || selectedProject.category === '3D Explainer' || selectedProject.category === 'AI Production') ? 'md:flex-row md:h-[85vh]' : 'md:h-auto'
+           <div className={`bg-dark w-full max-w-[95vw] lg:max-w-7xl border border-white/10 flex flex-col relative shadow-2xl shadow-gold/10 overflow-hidden max-h-[92vh] md:max-h-[85vh] overflow-y-auto md:overflow-hidden ${
+             (selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product' || selectedProject.category === '3D Explainer' || selectedProject.category === 'AI Production') ? 'md:flex-row' : ''
            }`}>
               <button 
                   onClick={() => setSelectedProject(null)}
-                  className="absolute top-6 right-6 z-[110] text-white/50 hover:text-gold transition-colors p-2 bg-black/50 backdrop-blur-md rounded-full border border-white/10"
+                  className="fixed md:absolute top-4 right-4 md:top-6 md:right-6 z-[120] text-white/70 hover:text-gold transition-colors p-3 md:p-2 bg-black/60 backdrop-blur-xl rounded-full border border-white/20 shadow-xl"
                 >
-                  <X size={28} />
+                  <X size={24} />
               </button>
 
               <div className={`bg-black flex items-center justify-center relative group overflow-hidden ${
-                (selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product' || selectedProject.category === '3D Explainer' || selectedProject.category === 'AI Production') ? 'w-full md:w-[70%] h-1/2 md:h-auto' : 'w-full aspect-video'
+                (selectedProject.category === '3D TVC' || selectedProject.category === '3D FOOH' || selectedProject.category === '3D Product' || selectedProject.category === '3D Explainer' || selectedProject.category === 'AI Production') ? 'w-full md:w-[70%] h-[50vh] md:h-auto' : 'w-full aspect-video'
               }`}>
                  {selectedProject.videoUrl ? (
                     <video 

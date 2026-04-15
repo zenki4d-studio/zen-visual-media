@@ -12,13 +12,13 @@ const App: React.FC = () => {
   return (
     <ThemeProvider>
       <LanguageProvider>
-        <div className="bg-softWhite dark:bg-dark text-charcoal dark:text-white min-h-screen selection:bg-gold-400 selection:text-black font-sans transition-colors duration-500">
+        <div className="bg-softWhite dark:bg-dark text-charcoal dark:text-white min-h-screen selection:bg-blue-600 selection:text-white font-sans transition-colors duration-500">
           <Navbar />
           <main>
             <Hero />
+            <Projects />
             <About />
             <Services />
-            <Projects />
             <Contact />
           </main>
         </div>

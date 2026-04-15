@@ -27,6 +27,7 @@ export interface Project {
   client?: string;
   thumbnail: string;
   videoUrl?: string;
+  previewVideoUrl?: string;
   description: string;
   descriptionEn?: string;
   descriptionJp?: string;

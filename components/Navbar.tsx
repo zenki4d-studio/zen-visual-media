@@ -50,9 +50,9 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center gap-6">
           <div className="flex items-center gap-8 border-r border-white/10 pr-6">
             <a href="#hero" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.zen}</a>
+            <a href="#projects" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.productions}</a>
             <a href="#about" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.vision}</a>
             <a href="#services" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.engine}</a>
-            <a href="#projects" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.productions}</a>
             <a href="#contact" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.connect}</a>
           </div>
           
@@ -125,9 +125,9 @@ const Navbar: React.FC = () => {
               </div>
            </div>
            <a href="#hero" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.zen}</a>
+           <a href="#projects" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.productions}</a>
            <a href="#about" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.vision}</a>
            <a href="#services" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.engine}</a>
-           <a href="#projects" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.productions}</a>
            <a href="#contact" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.connect}</a>
         </div>
       </div>

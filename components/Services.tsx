@@ -37,25 +37,36 @@ const Services: React.FC = () => {
             return (
               <div 
                 key={service.id}
-                className="group border-b border-white/10 py-12 hover:border-gold transition-colors duration-500 flex flex-col md:flex-row gap-8 md:items-center relative"
+                className="group border-b border-white/10 py-8 md:py-12 hover:border-gold transition-colors duration-500 flex flex-col md:flex-row gap-4 md:gap-8 md:items-center relative"
               >
-                <div className="md:w-1/12 text-gray-800 font-display text-2xl group-hover:text-gold transition-colors">
-                  {index + 1}.
-                </div>
-                
-                <div className="md:w-4/12">
-                  <h3 className="text-xl md:text-2xl font-display text-white group-hover:pl-4 transition-all duration-300 uppercase tracking-tight">
-                    {translatedService.title}
-                  </h3>
+                {/* Header: Number + Title + Icon (on mobile) */}
+                <div className="flex items-center justify-between w-full md:contents">
+                  <div className="flex items-center gap-4 md:contents">
+                    <div className="md:w-1/12 text-gray-800 font-display text-2xl group-hover:text-gold transition-colors shrink-0">
+                      {index + 1}.
+                    </div>
+                    
+                    <div className="md:w-4/12">
+                      <h3 className="text-xl md:text-2xl font-display text-white group-hover:pl-4 transition-all duration-300 uppercase tracking-tight">
+                        {translatedService.title}
+                      </h3>
+                    </div>
+                  </div>
+
+                  {/* Icon on right for mobile header */}
+                  <div className="md:hidden opacity-40 group-hover:opacity-100 transition-all duration-300">
+                    <service.icon className="text-gold w-6 h-6" strokeWidth={1.5} />
+                  </div>
                 </div>
 
-                <div className="md:w-5/12">
-                  <p className="text-gray-500 font-light text-sm leading-relaxed max-w-md group-hover:text-gray-300 transition-colors">
+                <div className="md:w-5/12 pl-10 md:pl-0">
+                  <p className="text-gray-400 font-light text-sm leading-relaxed max-w-md group-hover:text-gray-300 transition-colors">
                     {translatedService.desc}
                   </p>
                 </div>
 
-                <div className="md:w-2/12 flex justify-end opacity-20 group-hover:opacity-100 transition-all duration-300">
+                {/* Icon for Desktop */}
+                <div className="hidden md:flex md:w-2/12 justify-end opacity-20 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
                   <service.icon className="text-gold w-12 h-12 group-hover:scale-110 transition-transform" strokeWidth={1} />
                 </div>
               </div>

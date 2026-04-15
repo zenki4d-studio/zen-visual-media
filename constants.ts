@@ -9,9 +9,9 @@ import { TeamMember, Service, Project, SkillData } from "./types";
 
 export const NAV_LINKS = [
   { name: "Zen", href: "#hero" },
+  { name: "Projects", href: "#projects" },
   { name: "About Us", href: "#about" },
   { name: "Services", href: "#services" },
-  { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -416,8 +416,8 @@ export const PROJECTS: Project[] = [
 
 
 export const SOCIALS = {
-  email: "zennexus.pro@gmail.com",
-  website: "zennexus.pro",
+  email: "zenvisualmedia.dn@gmail.com",
+  website: "zenvisualmedia.com",
   tiktok: "Zen.visual.media",
   whatsapp: "+84 994 023 274"
 };
