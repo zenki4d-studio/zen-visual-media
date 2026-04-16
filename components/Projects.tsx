@@ -5,7 +5,7 @@ import { X, ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 const CATEGORIES: ProjectCategory[] = ['All', '3D TVC', '3D FOOH', '3D Product', '3D Explainer', 'AI Production'];
-const PROJECTS_PER_PAGE = 6;
+const PROJECTS_PER_PAGE = 12;
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState<ProjectCategory>('All');
@@ -36,10 +36,7 @@ const Projects: React.FC = () => {
         if (selectedProject) {
           video.pause();
         } else {
-          // Only play if it was intended to (autoPlay is true on these videos)
-          video.play().catch(() => {
-            // Browser might block autoplay if not muted or user hasn't interacted
-          });
+          video.play().catch(() => {});
         }
       }
     });
