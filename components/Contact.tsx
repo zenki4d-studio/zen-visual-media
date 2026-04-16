@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
             {t.contact.title}
           </h2>
           
-          <p className="max-w-xl text-lg md:text-2xl font-serif font-medium mb-12 text-dark/80 px-6">
+          <p className="max-w-screen-lg text-lg md:text-2xl font-serif font-medium mb-12 text-dark/80 px-6">
             {t.contact.desc}
           </p>
 

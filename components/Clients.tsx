@@ -9,7 +9,7 @@ const Clients: React.FC = () => {
             <img 
               src="./pictures/our clients/20260416-125504.png" 
               alt="Zen Visual Media Clients" 
-              className="w-full h-[180px] md:h-auto object-cover md:object-contain object-bottom md:object-center opacity-80 filter brightness-110 dark:brightness-100 transition-all duration-700 hover:opacity-100"
+              className="w-full h-[180px] md:h-auto object-cover md:object-contain object-bottom md:object-center opacity-80 filter invert dark:invert-0 brightness-110 dark:brightness-100 transition-all duration-700 hover:opacity-100"
             />
           </div>
         </div>
