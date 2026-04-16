@@ -100,7 +100,9 @@
     </div>
 
     <script>
+      console.log("Messenger SDK initialization starting...");
       window.fbAsyncInit = function() {
+        console.log("FB SDK Initialized");
         FB.init({
           xfbml            : true,
           version          : 'v18.0'
@@ -113,6 +115,7 @@
         js = d.createElement(s); js.id = id;
         js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
+        console.log("Messenger Script Tag injected");
       }(document, 'script', 'facebook-jssdk'));
     </script>
   </body>
