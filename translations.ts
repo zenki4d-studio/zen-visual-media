@@ -11,11 +11,11 @@ export const TRANSLATIONS = {
       connect: "Contact"
     },
     hero: {
-      title: "AWAKEN",
-      subtitle: "YOUR EMOTIONS",
-      slogan: "Sáng tạo từ tâm, nâng tầm thương hiệu",
-      power: "ZEN VISUAL MEDIA",
-      cta: "THE WORKS"
+      title: "ZEN",
+      subtitle: "VISUAL MEDIA",
+      slogan: "Turning ideas into brand stories.",
+      power: "Live - Grow - Give",
+      cta: "Explore Our Works"
     },
     clients: {
       title: "OUR CLIENTS"
@@ -71,11 +71,11 @@ export const TRANSLATIONS = {
       connect: "Liên hệ"
     },
     hero: {
-      title: "ĐÁNH THỨC",
-      subtitle: "CẢM XÚC CỦA BẠN",
-      slogan: "Sáng tạo từ tâm, nâng tầm thương hiệu",
-      power: "ZEN VISUAL MEDIA",
-      cta: "DỰ ÁN NỔI BẬT"
+      title: "ZEN",
+      subtitle: "VISUAL MEDIA",
+      slogan: "Hiện thực hóa ý tưởng thành câu chuyện thương hiệu.",
+      power: "Sống - Phát triển - Cho đi",
+      cta: "Khám phá dự án"
     },
     clients: {
       title: "KHÁCH HÀNG CỦA CHÚNG TÔI"
@@ -193,9 +193,9 @@ export const TRANSLATIONS = {
     hero: {
       title: "ZEN",
       subtitle: "비주얼 미디어",
-      slogan: "아이디어를 브랜드 스토리로 구현합니다.",
-      power: "LIVE – GROW – GIVE",
-      cta: "포트폴리오 보기"
+      slogan: "아이디어를 브랜드 스토리로.",
+      power: "살아가다 - 성장하다 - 나누다",
+      cta: "작품 둘러보기"
     },
     clients: {
       title: "주요 클라이언트"
