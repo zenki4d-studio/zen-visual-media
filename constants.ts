@@ -148,6 +148,83 @@ export const PROJECTS: Project[] = [
     description: "Video Quảng cáo truyền hình",
     descriptionEn: "Television Commercial Video"
   },
+  {
+    id: "3d-tvc-eucerin",
+    title: "Eucerin TVC",
+    titleEn: "Eucerin TVC",
+    category: "3D TVC",
+    client: "Eucerin",
+    thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/TVC%20Commercial/8-eucerin-tvc-1.mp4",
+    description: "Video Quảng cáo truyền hình",
+    descriptionEn: "Television Commercial Video"
+  },
+  {
+    id: "3d-tvc-panasonic-be-bo-1",
+    title: "Panasonic Bé Bố 1",
+    titleEn: "Panasonic Baby Daddy 1",
+    category: "3D TVC",
+    client: "Panasonic",
+    thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/TVC%20Commercial/9-panasonic-baby-daddy-1.mp4",
+    description: "Video Quảng cáo truyền hình",
+    descriptionEn: "Television Commercial Video"
+  },
+  {
+    id: "3d-tvc-panasonic-be-bo-2",
+    title: "Panasonic Bé Bố 2",
+    titleEn: "Panasonic Baby Daddy 2",
+    category: "3D TVC",
+    client: "Panasonic",
+    thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/TVC%20Commercial/9-panasonic-baby-daddy-2.mp4",
+    description: "Video Quảng cáo truyền hình",
+    descriptionEn: "Television Commercial Video"
+  },
+  {
+    id: "3d-tvc-panasonic-be-bo-3",
+    title: "Panasonic Bé Bố 3",
+    titleEn: "Panasonic Baby Daddy 3",
+    category: "3D TVC",
+    client: "Panasonic",
+    thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/TVC%20Commercial/9-panasonic-baby-daddy-3.mp4",
+    description: "Video Quảng cáo truyền hình",
+    descriptionEn: "Television Commercial Video"
+  },
+  {
+    id: "3d-tvc-gamuda",
+    title: "Gamuda TVC",
+    titleEn: "Gamuda TVC",
+    category: "3D TVC",
+    client: "Gamuda",
+    thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/TVC%20Commercial/10-gamuda-tvc-1.mp4",
+    description: "Video Quảng cáo truyền hình",
+    descriptionEn: "Television Commercial Video"
+  },
+  {
+    id: "3d-tvc-samsung-s25",
+    title: "Samsung S25 Ultra x Robert DAT",
+    titleEn: "Samsung S25 Ultra x Robert DAT",
+    category: "3D TVC",
+    client: "Samsung",
+    thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/TVC%20Commercial/11-samsung-s25-ultra.mp4",
+    description: "Video Quảng cáo truyền hình",
+    descriptionEn: "Television Commercial Video"
+  },
+  {
+    id: "3d-tvc-listerine",
+    title: "Listerine TVC",
+    titleEn: "Listerine TVC",
+    category: "3D TVC",
+    client: "Listerine",
+    thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/TVC%20Commercial/12-listerine-tvc-1.mp4",
+    description: "Video Quảng cáo truyền hình",
+    descriptionEn: "Television Commercial Video"
+  },
   // 3D FOOH (New Videos)
   {
     id: "3d-fooh-tiktok-9",
@@ -260,6 +337,39 @@ export const PROJECTS: Project[] = [
     client: "Grow Plus+",
     thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
     videoUrl: "./videos/3D%20FOOH/10.%20GrowPlus+%20Metro%20SAIGON.mp4",
+    description: "Video 3D quảng cáo ngoài trời",
+    descriptionEn: "3D FOOH Advertising Video"
+  },
+  {
+    id: "3d-fooh-olay",
+    title: "OLAY Super Serium-",
+    titleEn: "OLAY Super Serium-",
+    category: "3D FOOH",
+    client: "Olay",
+    thumbnail: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/3D%20FOOH/11-olay-super-serium.mp4",
+    description: "Video 3D quảng cáo ngoài trời",
+    descriptionEn: "3D FOOH Advertising Video"
+  },
+  {
+    id: "3d-fooh-stubaki",
+    title: "STUBAKI VIETNAM",
+    titleEn: "STUBAKI VIETNAM",
+    category: "3D FOOH",
+    client: "Stubaki",
+    thumbnail: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/3D%20FOOH/12-stubaki-vietnam.mp4",
+    description: "Video 3D quảng cáo ngoài trời",
+    descriptionEn: "3D FOOH Advertising Video"
+  },
+  {
+    id: "3d-fooh-panasonic-battery",
+    title: "ALKALINE BATTERY Panasonic",
+    titleEn: "ALKALINE BATTERY Panasonic",
+    category: "3D FOOH",
+    client: "Panasonic",
+    thumbnail: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/3D%20FOOH/13-alkaline-battery-panasonic.mp4",
     description: "Video 3D quảng cáo ngoài trời",
     descriptionEn: "3D FOOH Advertising Video"
   },
@@ -408,6 +518,17 @@ export const PROJECTS: Project[] = [
     client: "Eucerin",
     thumbnail: "https://images.unsplash.com/photo-1596462502278-27bf85033e5a?q=80&w=1000&auto=format&fit=crop",
     videoUrl: "./videos/AI%20PRODUCTION/4.%20TVC%20AI%20Eucerin-.mp4",
+    description: "Sản phẩm video được tạo ra hoàn toàn bằng AI.",
+    descriptionEn: "Video production created entirely by AI."
+  },
+  {
+    id: "ai-production-tiktok-shop",
+    title: "Tiktok Shop AI",
+    titleEn: "Tiktok Shop AI",
+    category: "AI Production",
+    client: "Tiktok Shop",
+    thumbnail: "https://images.unsplash.com/photo-1614728853913-1e221165d770?q=80&w=1000&auto=format&fit=crop",
+    videoUrl: "./videos/AI%20PRODUCTION/5-tiktok-shop-ai.mp4",
     description: "Sản phẩm video được tạo ra hoàn toàn bằng AI.",
     descriptionEn: "Video production created entirely by AI."
   },
