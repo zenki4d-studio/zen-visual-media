@@ -7,14 +7,18 @@ export const TRANSLATIONS = {
       vision: "About Us",
       engine: "Services",
       productions: "Projects",
+      clients: "Clients",
       connect: "Contact"
     },
     hero: {
-      title: "ZEN",
-      subtitle: "VISUAL MEDIA",
-      slogan: "Turning ideas into brand stories.",
-      power: "Live - Grow - Give",
-      cta: "Explore Our Works"
+      title: "AWAKEN",
+      subtitle: "YOUR EMOTIONS",
+      slogan: "Sáng tạo từ tâm, nâng tầm thương hiệu",
+      power: "ZEN VISUAL MEDIA",
+      cta: "THE WORKS"
+    },
+    clients: {
+      title: "OUR CLIENTS"
     },
     about: {
       badge: "About Us",
@@ -63,14 +67,18 @@ export const TRANSLATIONS = {
       vision: "Giới Thiệu",
       engine: "Dịch Vụ",
       productions: "Dự Án",
-      connect: "Liên Hệ"
+      clients: "Khách hàng",
+      connect: "Liên hệ"
     },
     hero: {
-      title: "ZEN",
-      subtitle: "VISUAL MEDIA",
-      slogan: "Hiện thực hóa ý tưởng thành câu chuyện thương hiệu.",
-      power: "Sống - Phát triển - Cho đi",
-      cta: "Khám phá dự án"
+      title: "ĐÁNH THỨC",
+      subtitle: "CẢM XÚC CỦA BẠN",
+      slogan: "Sáng tạo từ tâm, nâng tầm thương hiệu",
+      power: "ZEN VISUAL MEDIA",
+      cta: "DỰ ÁN NỔI BẬT"
+    },
+    clients: {
+      title: "KHÁCH HÀNG CỦA CHÚNG TÔI"
     },
     about: {
       badge: "Giới thiệu",
@@ -119,6 +127,7 @@ export const TRANSLATIONS = {
       vision: "会社概要",
       engine: "サービス",
       productions: "プロジェクト",
+      clients: "クライアント",
       connect: "お問い合わせ"
     },
     hero: {
@@ -127,6 +136,9 @@ export const TRANSLATIONS = {
       slogan: "アイデアをブランドストーリーに。 ",
       power: "生きる - 成長する - 与える",
       cta: "実績を見る"
+    },
+    clients: {
+      title: "クライアント"
     },
     about: {
       badge: "会社概要",
@@ -175,14 +187,18 @@ export const TRANSLATIONS = {
       vision: "회사 소개",
       engine: "서비스",
       productions: "프로젝트",
+      clients: "클라이언트",
       connect: "문의하기"
     },
     hero: {
       title: "ZEN",
       subtitle: "비주얼 미디어",
-      slogan: "아이디어를 브랜드 스토리로.",
-      power: "살아가다 - 성장하다 - 나누다",
-      cta: "작품 둘러보기"
+      slogan: "아이디어를 브랜드 스토리로 구현합니다.",
+      power: "LIVE – GROW – GIVE",
+      cta: "포트폴리오 보기"
+    },
+    clients: {
+      title: "주요 클라이언트"
     },
     about: {
       badge: "회사 소개",

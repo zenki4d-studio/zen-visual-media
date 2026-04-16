@@ -10,18 +10,18 @@ const Contact: React.FC = () => {
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <div className="flex flex-col items-center text-center">
           
-          <h2 className="text-[10vw] leading-none font-display font-black tracking-tighter mb-4 text-dark opacity-90 uppercase">
+          <h2 className="text-4xl md:text-[10vw] leading-none font-display font-black tracking-tighter mb-4 text-dark opacity-90 uppercase px-4">
             {t.contact.title}
           </h2>
           
-          <p className="max-w-xl text-xl md:text-2xl font-serif font-medium mb-12 text-dark/80">
+          <p className="max-w-xl text-lg md:text-2xl font-serif font-medium mb-12 text-dark/80 px-6">
             {t.contact.desc}
           </p>
 
-          <div className="flex flex-col gap-2 mb-20">
+          <div className="flex flex-col gap-2 mb-20 px-4">
             <a 
                 href={`mailto:${SOCIALS.email}`}
-                className="text-2xl md:text-5xl font-bold border-b-2 border-dark pb-2 hover:text-white hover:border-white transition-colors duration-300"
+                className="text-lg sm:text-2xl md:text-5xl lg:text-7xl font-bold border-b-2 border-dark pb-2 hover:text-white hover:border-white transition-colors duration-300 break-all"
             >
                 {SOCIALS.email}
             </a>

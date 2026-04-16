@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
       {/* 3D Abstract Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <img 
-          src="./pictures/Zen-family.jpg" 
+          src="./pictures/Sun-zen-circle.jpg" 
           alt="Zen Family Background" 
           className="w-full h-full object-cover opacity-50 transition-opacity duration-1000"
         />

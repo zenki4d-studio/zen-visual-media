@@ -12,6 +12,7 @@ export const NAV_LINKS = [
   { name: "Projects", href: "#projects" },
   { name: "About Us", href: "#about" },
   { name: "Services", href: "#services" },
+  { name: "Clients", href: "#clients" },
   { name: "Contact", href: "#contact" },
 ];
 

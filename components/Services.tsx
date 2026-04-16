@@ -6,7 +6,7 @@ const Services: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="services" className="py-32 bg-dark relative overflow-hidden">
+    <section id="services" className="py-16 md:py-24 bg-dark relative overflow-hidden">
       
       {/* 3D Background - Technical Layer */}
       <div className="absolute inset-0 z-0 pointer-events-none">

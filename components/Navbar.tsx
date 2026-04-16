@@ -53,6 +53,7 @@ const Navbar: React.FC = () => {
             <a href="#projects" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.productions}</a>
             <a href="#about" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.vision}</a>
             <a href="#services" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.engine}</a>
+            <a href="#clients" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.clients}</a>
             <a href="#contact" className="text-xs font-bold uppercase tracking-[0.2em] hover:text-gold transition-colors">{t.nav.connect}</a>
           </div>
           
@@ -128,6 +129,7 @@ const Navbar: React.FC = () => {
            <a href="#projects" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.productions}</a>
            <a href="#about" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.vision}</a>
            <a href="#services" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.engine}</a>
+           <a href="#clients" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.clients}</a>
            <a href="#contact" onClick={() => setIsOpen(false)} className="text-4xl font-display font-bold text-transparent outline-text hover:text-charcoal dark:hover:text-white transition-all tracking-wider uppercase">{t.nav.connect}</a>
         </div>
       </div>

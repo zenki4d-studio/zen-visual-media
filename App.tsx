@@ -2,9 +2,11 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
+import Clients from './components/Clients';
 import About from './components/Team'; 
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import MessengerChat from './components/MessengerChat';
 import { LanguageProvider } from './LanguageContext';
 import { ThemeProvider } from './ThemeContext';
 
@@ -19,8 +21,10 @@ const App: React.FC = () => {
             <Projects />
             <About />
             <Services />
+            <Clients />
             <Contact />
           </main>
+          <MessengerChat />
         </div>
       </LanguageProvider>
     </ThemeProvider>
