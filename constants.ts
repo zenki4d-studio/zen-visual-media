@@ -72,7 +72,7 @@ export const PROJECTS: Project[] = [
   {
     id: "3d-tvc-dragon",
     title: "Ngọc Rồng Đông Giang",
-    titleEn: "East Giang Dragon Gem",
+    titleEn: "Dong Giang Dragon Gem",
     category: "3D TVC",
     client: "Hòn ngọc Á châu",
     thumbnail: "https://images.unsplash.com/photo-1578305011741-f76110cb18f0?q=80&w=1000&auto=format&fit=crop",

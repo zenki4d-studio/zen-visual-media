@@ -5,7 +5,7 @@ import { X, ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 const CATEGORIES: ProjectCategory[] = ['All', '3D TVC', '3D FOOH', '3D Product', '3D Explainer', 'AI Production'];
-const PROJECTS_PER_PAGE = 12;
+const PROJECTS_PER_PAGE = 9;
 
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState<ProjectCategory>('All');
